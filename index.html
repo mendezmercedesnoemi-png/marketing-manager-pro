@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Marketing Manager PRO | Software y Marketing Digital</title>
-  <meta name="description" content="Software, productos digitales y servicios de Marketing Digital para emprendedores, comercios y empresas.">
+
+  <meta
+    name="description"
+    content="Software, productos digitales y servicios de Marketing Digital para emprendedores, comercios y empresas."
+  >
 
   <style>
     * {
@@ -35,7 +39,7 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 3px 15px rgba(0,0,0,.15);
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
     }
 
     .brand {
@@ -75,8 +79,11 @@
     .hero {
       min-height: 570px;
       padding: 70px 8%;
-      background:
-        linear-gradient(135deg, rgba(6,24,49,.97), rgba(7,87,145,.94));
+      background: linear-gradient(
+        135deg,
+        rgba(6, 24, 49, 0.97),
+        rgba(7, 87, 145, 0.94)
+      );
       color: white;
       display: flex;
       align-items: center;
@@ -87,7 +94,7 @@
       width: 100%;
       margin: auto;
       display: grid;
-      grid-template-columns: 1.4fr .8fr;
+      grid-template-columns: 1.4fr 0.8fr;
       align-items: center;
       gap: 60px;
     }
@@ -117,7 +124,7 @@
       width: 100%;
       max-width: 330px;
       border-radius: 50%;
-      box-shadow: 0 15px 45px rgba(0,0,0,.3);
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
     }
 
     .button {
@@ -129,7 +136,7 @@
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
-      transition: .2s;
+      transition: 0.2s;
     }
 
     .button:hover {
@@ -172,7 +179,7 @@
       background: white;
       padding: 30px;
       border-radius: 15px;
-      box-shadow: 0 7px 25px rgba(21,49,83,.09);
+      box-shadow: 0 7px 25px rgba(21, 49, 83, 0.09);
     }
 
     .card h3 {
@@ -196,6 +203,11 @@
       margin-bottom: 15px;
     }
 
+    .status-free {
+      background: #e8f8ef;
+      color: #17864b;
+    }
+
     .services {
       background: #edf5fc;
     }
@@ -216,7 +228,7 @@
       color: #10213a;
       border-radius: 18px;
       padding: 40px;
-      box-shadow: 0 15px 45px rgba(0,0,0,.22);
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.22);
     }
 
     .pack-label {
@@ -249,6 +261,7 @@
     .note {
       font-size: 14px;
       color: #718096;
+      margin-top: 10px;
     }
 
     .ebooks {
@@ -346,227 +359,290 @@
       .pack {
         padding: 27px;
       }
+
+      .button {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <div class="brand">
-    <img src="marketing_manager.png" alt="Logo Marketing Manager PRO">
-    <div class="brand-text">Marketing Manager <span>PRO</span></div>
-  </div>
-
-  <nav>
-    <a href="#programas">Programas</a>
-    <a href="#servicios">Servicios</a>
-    <a href="#pack">Pack Digital</a>
-    <a href="#ebooks">Ebooks</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <div class="hero-wrap">
-
-    <div>
-      <h1>
-        Tu estrategia y tus herramientas,
-        <span>en un solo lugar.</span>
-      </h1>
-
-      <p>
-        Software, productos digitales y servicios de Marketing Digital
-        creados para emprendedores, comercios y empresas que quieren
-        organizarse, profesionalizar su presencia y hacer crecer su negocio.
-      </p>
-
-      <a class="button" href="#servicios">Conocer servicios</a>
-      <a class="button button-outline" href="#programas">Ver programas</a>
+  <header>
+    <div class="brand">
+      <img src="marketing_manager.png" alt="Logo Marketing Manager PRO">
+      <div class="brand-text">
+        Marketing Manager <span>PRO</span>
+      </div>
     </div>
 
-    <div class="hero-logo">
-      <img src="marketing_manager.png" alt="Marketing Manager PRO">
+    <nav>
+      <a href="#programas">Programas</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#pack">Pack Digital</a>
+      <a href="#ebooks">Productos Digitales</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-wrap">
+
+      <div>
+        <h1>
+          Tu estrategia y tus herramientas,
+          <span>en un solo lugar.</span>
+        </h1>
+
+        <p>
+          Software, productos digitales y servicios de Marketing Digital
+          creados para emprendedores, comercios y empresas que quieren
+          organizarse, profesionalizar su presencia y hacer crecer su negocio.
+        </p>
+
+        <a class="button" href="#servicios">
+          Conocer servicios
+        </a>
+
+        <a class="button button-outline" href="#programas">
+          Ver programas
+        </a>
+      </div>
+
+      <div class="hero-logo">
+        <img src="marketing_manager.png" alt="Marketing Manager PRO">
+      </div>
+
     </div>
+  </section>
 
-  </div>
-</section>
+  <section id="programas">
 
-<section id="programas">
-  <h2>Programas</h2>
+    <h2>Programas</h2>
 
-  <p class="subtitle">
-    Herramientas desarrolladas para simplificar la gestión de negocios,
-    marketing y finanzas.
-  </p>
-
-  <div class="cards">
-
-    <div class="card">
-      <span class="status">EN PREPARACIÓN</span>
-      <h3>Marketing Manager PRO</h3>
-      <p>
-        Una solución para organizar clientes, estrategias, contenidos,
-        campañas, objetivos y reportes de Marketing Digital.
-      </p>
-      <p>Estamos preparando su próxima versión.</p>
-    </div>
-
-    <div class="card">
-      <span class="status">PRÓXIMAMENTE</span>
-      <h3>Mi Dinero</h3>
-      <p>
-        Herramienta práctica para organizar y controlar las finanzas
-        de forma sencilla.
-      </p>
-    </div>
-
-    <div class="card">
-      <span class="status">EN MEJORA</span>
-      <h3>Mi Negocio Fácil</h3>
-      <p>
-        Gestión de productos, ventas, stock, cobros e historial para
-        pequeños comercios y emprendimientos.
-      </p>
-      <p>Su descarga gratuita volverá a estar disponible próximamente.</p>
-    </div>
-
-  </div>
-</section>
-
-<section id="servicios" class="services">
-  <h2>Servicios de Marketing Digital</h2>
-
-  <p class="subtitle">
-    Estrategias y herramientas para construir una presencia digital
-    profesional y generar nuevas oportunidades para tu negocio.
-  </p>
-
-  <div class="cards">
-
-    <div class="card">
-      <h3>Redes Sociales</h3>
-      <p>
-        Planificación, contenido y organización de Instagram y Facebook.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Estrategia Digital</h3>
-      <p>
-        Análisis del negocio, público, competencia, propuesta comercial
-        y oportunidades de crecimiento.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Contenido</h3>
-      <p>
-        Diseño de publicaciones, copies, Reels y planificación
-        de contenido para redes sociales.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Publicidad Digital</h3>
-      <p>
-        Planificación y gestión de campañas publicitarias para
-        alcanzar potenciales clientes.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<section id="pack" class="pack-section">
-
-  <h2>Una solución para empezar</h2>
-
-  <p class="subtitle">
-    Un servicio pensado especialmente para emprendimientos que quieren
-    profesionalizar su presencia digital.
-  </p>
-
-  <div class="pack">
-
-    <div class="pack-label">Precio lanzamiento</div>
-
-    <h3>Pack Presencia Digital</h3>
-
-    <p>
-      Una base profesional para ordenar tu comunicación y comenzar
-      a trabajar tus redes con una estrategia clara.
+    <p class="subtitle">
+      Herramientas desarrolladas para simplificar la gestión de negocios,
+      marketing y finanzas.
     </p>
 
-    <div class="price">$120.000 ARS</div>
+    <div class="cards">
 
-    <p><strong>Pago único</strong></p>
+      <div class="card">
+        <span class="status">EN PREPARACIÓN</span>
 
-    <ul>
-      <li>Diagnóstico de presencia digital.</li>
-      <li>Revisión y optimización de Instagram y Facebook.</li>
-      <li>Definición de público y propuesta comercial.</li>
-      <li>Estrategia inicial de Marketing Digital.</li>
-      <li>Calendario de contenidos de 30 días.</li>
-      <li>Publicaciones diseñadas con copy.</li>
-      <li>2 Reels.</li>
-      <li>Revisión/configuración básica de WhatsApp Business, Facebook, Instagram y Meta.</li>
-    </ul>
+        <h3>Marketing Manager PRO</h3>
 
-    <a class="button"
-       href="https://wa.me/541136755794?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Pack%20Presencia%20Digital"
-       target="_blank">
-       Consultar por WhatsApp
+        <p>
+          Una solución para organizar clientes, estrategias, contenidos,
+          campañas, objetivos y reportes de Marketing Digital.
+        </p>
+
+        <p>
+          Estamos preparando su próxima versión.
+        </p>
+      </div>
+
+      <div class="card">
+        <span class="status">PRÓXIMAMENTE</span>
+
+        <h3>Mi Dinero</h3>
+
+        <p>
+          Herramienta práctica para organizar y controlar las finanzas
+          de forma sencilla.
+        </p>
+
+        <p>
+          Próximamente disponible.
+        </p>
+      </div>
+
+      <div class="card">
+        <span class="status status-free">GRATIS · DISPONIBLE</span>
+
+        <h3>Mi Negocio Fácil</h3>
+
+        <p>
+          Aplicación para pequeños comercios y emprendimientos que permite
+          gestionar productos, precios, ventas, stock, cobros e historial
+          de operaciones de forma sencilla.
+        </p>
+
+        <p>
+          Disponible gratuitamente para Android.
+        </p>
+
+        <a
+          class="button"
+          href="https://github.com/mendezmercedesnoemi-png/mi-negocio-facil/releases/tag/v1.0.0"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Descargar gratis
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="servicios" class="services">
+
+    <h2>Servicios de Marketing Digital</h2>
+
+    <p class="subtitle">
+      Estrategias y herramientas para construir una presencia digital
+      profesional y generar nuevas oportunidades para tu negocio.
+    </p>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Redes Sociales</h3>
+
+        <p>
+          Planificación, contenido y organización de Instagram y Facebook
+          para construir una presencia digital profesional.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Estrategia Digital</h3>
+
+        <p>
+          Análisis del negocio, público, competencia, propuesta comercial
+          y oportunidades de crecimiento.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Contenido</h3>
+
+        <p>
+          Diseño de publicaciones, copies, Reels y planificación
+          de contenido para redes sociales.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Publicidad Digital</h3>
+
+        <p>
+          Planificación y gestión de campañas publicitarias orientadas
+          a alcanzar potenciales clientes.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="pack" class="pack-section">
+
+    <h2>Una solución para empezar</h2>
+
+    <p class="subtitle">
+      Un servicio pensado especialmente para emprendimientos que quieren
+      profesionalizar su presencia digital.
+    </p>
+
+    <div class="pack">
+
+      <div class="pack-label">
+        Precio lanzamiento
+      </div>
+
+      <h3>Pack Presencia Digital</h3>
+
+      <p>
+        Una base profesional para ordenar tu comunicación y comenzar
+        a trabajar tus redes con una estrategia clara.
+      </p>
+
+      <div class="price">
+        $120.000 ARS
+      </div>
+
+      <p>
+        <strong>Pago único</strong>
+      </p>
+
+      <ul>
+        <li>Diagnóstico de presencia digital.</li>
+        <li>Revisión y optimización de Instagram y Facebook.</li>
+        <li>Definición de público y propuesta comercial.</li>
+        <li>Estrategia inicial de Marketing Digital.</li>
+        <li>Calendario de contenidos de 30 días.</li>
+        <li>Publicaciones diseñadas con copy.</li>
+        <li>2 Reels.</li>
+        <li>
+          Revisión y configuración básica de WhatsApp Business,
+          Facebook, Instagram y Meta.
+        </li>
+      </ul>
+
+      <a
+        class="button"
+        href="https://wa.me/541136755794?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Pack%20Presencia%20Digital"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Consultar por WhatsApp
+      </a>
+
+      <p class="note">
+        La inversión publicitaria y la gestión de campañas pagas
+        no están incluidas en este pack y se cotizan por separado.
+      </p>
+
+    </div>
+  </section>
+
+  <section id="ebooks" class="ebooks">
+
+    <h2>Ebooks y productos digitales</h2>
+
+    <p class="subtitle">
+      Recursos prácticos creados para ayudarte a organizar,
+      promocionar y hacer crecer tu negocio.
+    </p>
+
+    <div class="ebook-box">
+
+      <h3>Próximamente</h3>
+
+      <p>
+        Estamos preparando ebooks, guías, plantillas y nuevos
+        recursos digitales. Muy pronto vas a poder encontrarlos acá.
+      </p>
+
+    </div>
+  </section>
+
+  <section id="contacto" class="contact">
+
+    <h2>¿Hablamos de tu negocio?</h2>
+
+    <p>
+      Consultanos por servicios de Marketing Digital,
+      nuestros programas o próximos productos digitales.
+    </p>
+
+    <a
+      class="button"
+      href="https://wa.me/541136755794?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Marketing%20Manager%20PRO"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Contactar por WhatsApp
     </a>
 
-    <p class="note">
-      La inversión publicitaria y la gestión de campañas pagas
-      no están incluidas en este pack y se cotizan por separado.
-    </p>
+  </section>
 
-  </div>
-</section>
-
-<section id="ebooks" class="ebooks">
-
-  <h2>Ebooks y productos digitales</h2>
-
-  <p class="subtitle">
-    Recursos prácticos creados para ayudarte a organizar,
-    promocionar y hacer crecer tu negocio.
-  </p>
-
-  <div class="ebook-box">
-    <h3>Próximamente</h3>
-    <p>
-      Estamos preparando nuevos ebooks, guías y recursos digitales.
-      Muy pronto vas a poder encontrarlos acá.
-    </p>
-  </div>
-
-</section>
-
-<section id="contacto" class="contact">
-
-  <h2>¿Hablamos de tu negocio?</h2>
-
-  <p>
-    Consultanos por servicios de Marketing Digital, nuestros programas
-    o próximos productos digitales.
-  </p>
-
-  <a class="button"
-     href="https://wa.me/541136755794?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Marketing%20Manager%20PRO"
-     target="_blank">
-     Contactar por WhatsApp
-  </a>
-
-</section>
-
-<footer>
-  © 2026 Marketing Manager PRO · Software · Productos Digitales · Marketing
-</footer>
+  <footer>
+    © 2026 Marketing Manager PRO · Software · Productos Digitales · Marketing Digital
+  </footer>
 
 </body>
 </html>

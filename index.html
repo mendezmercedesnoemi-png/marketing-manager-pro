@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Marketing Manager PRO | Software y Marketing Digital</title>
+  <meta name="description" content="Software, productos digitales y servicios de Marketing Digital para emprendedores, comercios y empresas.">
 
   <style>
     * {
@@ -13,168 +14,337 @@
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #f5f7fb;
-      color: #172033;
+      background: #f5f8fc;
+      color: #10213a;
       line-height: 1.6;
     }
 
     header {
-      background: #10182b;
+      background: rgba(7, 24, 48, 0.97);
       color: white;
-      padding: 18px 8%;
+      padding: 12px 7%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 15px rgba(0,0,0,.15);
     }
 
-    .logo {
-      font-size: 23px;
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand img {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: white;
+    }
+
+    .brand-text {
+      font-size: 20px;
       font-weight: bold;
     }
 
-    .logo span {
-      color: #55b8ff;
+    .brand-text span {
+      color: #20bff3;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin-left: 22px;
+      margin-left: 20px;
       font-size: 15px;
     }
 
+    nav a:hover {
+      color: #20bff3;
+    }
+
     .hero {
-      min-height: 520px;
-      padding: 90px 8%;
-      background: linear-gradient(135deg, #10182b, #183d68);
+      min-height: 570px;
+      padding: 70px 8%;
+      background:
+        linear-gradient(135deg, rgba(6,24,49,.97), rgba(7,87,145,.94));
       color: white;
       display: flex;
       align-items: center;
     }
 
-    .hero-content {
-      max-width: 720px;
+    .hero-wrap {
+      max-width: 1150px;
+      width: 100%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.4fr .8fr;
+      align-items: center;
+      gap: 60px;
     }
 
     .hero h1 {
-      font-size: 48px;
-      line-height: 1.15;
+      font-size: 50px;
+      line-height: 1.12;
       margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #32c9f5;
     }
 
     .hero p {
       font-size: 20px;
-      margin-bottom: 32px;
-      color: #dcecff;
+      color: #dceeff;
+      max-width: 720px;
+      margin-bottom: 30px;
+    }
+
+    .hero-logo {
+      text-align: center;
+    }
+
+    .hero-logo img {
+      width: 100%;
+      max-width: 330px;
+      border-radius: 50%;
+      box-shadow: 0 15px 45px rgba(0,0,0,.3);
     }
 
     .button {
       display: inline-block;
-      padding: 13px 25px;
-      margin: 6px 8px 6px 0;
-      background: #168eea;
+      padding: 13px 24px;
+      margin: 6px 7px 6px 0;
+      background: #078ee5;
       color: white;
       text-decoration: none;
-      border-radius: 7px;
+      border-radius: 8px;
       font-weight: bold;
+      transition: .2s;
     }
 
-    .button-secondary {
+    .button:hover {
+      transform: translateY(-2px);
+      background: #0576c1;
+    }
+
+    .button-outline {
       background: transparent;
       border: 2px solid white;
     }
 
     section {
-      padding: 70px 8%;
+      padding: 75px 8%;
     }
 
     section h2 {
       text-align: center;
-      font-size: 34px;
-      margin-bottom: 12px;
+      font-size: 35px;
+      margin-bottom: 10px;
     }
 
     .subtitle {
       text-align: center;
-      color: #647084;
-      max-width: 720px;
-      margin: 0 auto 40px;
+      color: #66758b;
+      max-width: 760px;
+      margin: 0 auto 42px;
+      font-size: 17px;
     }
 
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 24px;
-      max-width: 1100px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1150px;
       margin: auto;
     }
 
     .card {
       background: white;
       padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 6px 22px rgba(0,0,0,.08);
+      border-radius: 15px;
+      box-shadow: 0 7px 25px rgba(21,49,83,.09);
     }
 
     .card h3 {
-      margin-bottom: 12px;
       font-size: 22px;
+      margin-bottom: 12px;
     }
 
     .card p {
-      color: #596579;
-      margin-bottom: 20px;
+      color: #617087;
+      margin-bottom: 15px;
     }
 
-    .free {
-      color: #148444;
+    .status {
+      display: inline-block;
+      background: #eaf5ff;
+      color: #0878be;
+      padding: 5px 11px;
+      border-radius: 20px;
+      font-size: 13px;
       font-weight: bold;
+      margin-bottom: 15px;
     }
 
     .services {
-      background: #eaf2fb;
+      background: #edf5fc;
+    }
+
+    .pack-section {
+      background: #071830;
+      color: white;
+    }
+
+    .pack-section .subtitle {
+      color: #c9dced;
+    }
+
+    .pack {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      color: #10213a;
+      border-radius: 18px;
+      padding: 40px;
+      box-shadow: 0 15px 45px rgba(0,0,0,.22);
+    }
+
+    .pack-label {
+      color: #078ee5;
+      font-weight: bold;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    .pack h3 {
+      font-size: 31px;
+      margin: 5px 0 8px;
+    }
+
+    .price {
+      font-size: 32px;
+      color: #078ee5;
+      font-weight: bold;
+      margin: 15px 0 20px;
+    }
+
+    .pack ul {
+      margin: 18px 0 25px 22px;
+    }
+
+    .pack li {
+      margin-bottom: 8px;
+    }
+
+    .note {
+      font-size: 14px;
+      color: #718096;
+    }
+
+    .ebooks {
+      background: white;
+    }
+
+    .ebook-box {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      padding: 40px;
+      background: #f3f8fd;
+      border: 2px dashed #a7cce7;
+      border-radius: 15px;
+    }
+
+    .ebook-box h3 {
+      font-size: 25px;
+      margin-bottom: 10px;
     }
 
     .contact {
-      background: #10182b;
+      background: linear-gradient(135deg, #07568f, #071830);
       color: white;
       text-align: center;
     }
 
     .contact p {
-      margin: 15px auto 25px;
+      color: #d8ebfa;
       max-width: 650px;
-      color: #dce4ef;
+      margin: 15px auto 25px;
+      font-size: 18px;
     }
 
     footer {
-      background: #080e1b;
-      color: #aab4c4;
+      background: #040d1c;
+      color: #aebdce;
       text-align: center;
-      padding: 22px;
+      padding: 25px;
       font-size: 14px;
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 850px) {
+      header {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
       nav {
-        margin-top: 12px;
-        width: 100%;
+        margin-top: 10px;
       }
 
       nav a {
         margin: 0 12px 0 0;
+        display: inline-block;
+        padding: 4px 0;
       }
 
-      .hero {
-        padding-top: 65px;
-        padding-bottom: 65px;
+      .hero-wrap {
+        grid-template-columns: 1fr;
+        text-align: center;
       }
 
       .hero h1 {
-        font-size: 37px;
+        font-size: 39px;
+      }
+
+      .hero p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-logo img {
+        max-width: 230px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      section {
+        padding: 55px 6%;
+      }
+
+      .hero {
+        padding: 55px 6%;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .brand-text {
+        font-size: 17px;
+      }
+
+      .pack {
+        padding: 27px;
       }
     }
   </style>
@@ -183,85 +353,83 @@
 <body>
 
 <header>
-  <div class="logo">Marketing Manager <span>PRO</span></div>
+  <div class="brand">
+    <img src="marketing_manager.png" alt="Logo Marketing Manager PRO">
+    <div class="brand-text">Marketing Manager <span>PRO</span></div>
+  </div>
 
   <nav>
     <a href="#programas">Programas</a>
     <a href="#servicios">Servicios</a>
+    <a href="#pack">Pack Digital</a>
+    <a href="#ebooks">Ebooks</a>
     <a href="#contacto">Contacto</a>
   </nav>
 </header>
 
 <section class="hero">
-  <div class="hero-content">
-    <h1>Software y Marketing para hacer crecer tu negocio</h1>
+  <div class="hero-wrap">
 
-    <p>
-      Herramientas digitales y servicios de Marketing Digital
-      pensados para emprendedores, comercios y empresas.
-    </p>
+    <div>
+      <h1>
+        Tu estrategia y tus herramientas,
+        <span>en un solo lugar.</span>
+      </h1>
 
-    <a class="button" href="#programas">Ver programas</a>
-    <a class="button button-secondary" href="#servicios">Servicios de Marketing</a>
+      <p>
+        Software, productos digitales y servicios de Marketing Digital
+        creados para emprendedores, comercios y empresas que quieren
+        organizarse, profesionalizar su presencia y hacer crecer su negocio.
+      </p>
+
+      <a class="button" href="#servicios">Conocer servicios</a>
+      <a class="button button-outline" href="#programas">Ver programas</a>
+    </div>
+
+    <div class="hero-logo">
+      <img src="marketing_manager.png" alt="Marketing Manager PRO">
+    </div>
+
   </div>
 </section>
 
 <section id="programas">
-  <h2>Nuestros programas</h2>
+  <h2>Programas</h2>
 
   <p class="subtitle">
-    Soluciones creadas para simplificar la gestión y potenciar
-    el crecimiento de negocios y emprendimientos.
+    Herramientas desarrolladas para simplificar la gestión de negocios,
+    marketing y finanzas.
   </p>
 
   <div class="cards">
 
     <div class="card">
-      <a class="button"
-   href="https://pay.hotmart.com/T107546425G?off=81le1j5q"
-   target="_blank">
-   Plan mensual
-</a>
-
-<a class="button"
-   href="https://pay.hotmart.com/T107546425G?off=nx0ihxtn"
-   target="_blank">
-   Plan anual
-</a>
+      <span class="status">EN PREPARACIÓN</span>
+      <h3>Marketing Manager PRO</h3>
       <p>
-        Software profesional para organizar y gestionar clientes,
-        estrategias, contenidos, campañas, objetivos y reportes de Marketing Digital.
+        Una solución para organizar clientes, estrategias, contenidos,
+        campañas, objetivos y reportes de Marketing Digital.
       </p>
-      <a class="button" href="#contacto">Más información</a>
+      <p>Estamos preparando su próxima versión.</p>
     </div>
 
     <div class="card">
-      <a class="button"
-   href="https://pay.hotmart.com/H107647481M?off=libah46e"
-   target="_blank">
-   Comprar
-</a>
+      <span class="status">PRÓXIMAMENTE</span>
+      <h3>Mi Dinero</h3>
       <p>
-        Una herramienta práctica para organizar y controlar
-        tus finanzas de manera simple.
+        Herramienta práctica para organizar y controlar las finanzas
+        de forma sencilla.
       </p>
-      <a class="button" href="#contacto">Comprar</a>
     </div>
 
     <div class="card">
+      <span class="status">EN MEJORA</span>
       <h3>Mi Negocio Fácil</h3>
       <p>
-        Gestioná productos, ventas, stock, cobros e historial
-        desde tu dispositivo Android.
+        Gestión de productos, ventas, stock, cobros e historial para
+        pequeños comercios y emprendimientos.
       </p>
-
-      <p class="free">100% GRATIS</p>
-
-      <a class="button"
-         href="https://github.com/mendezmercedesnoemi-png/mi-negocio-facil/releases/tag/v1.0.0"
-         target="_blank">
-        Descargar gratis
-      </a>
+      <p>Su descarga gratuita volverá a estar disponible próximamente.</p>
     </div>
 
   </div>
@@ -271,8 +439,8 @@
   <h2>Servicios de Marketing Digital</h2>
 
   <p class="subtitle">
-    También ayudamos a empresas y emprendimientos a desarrollar
-    y mejorar su presencia digital.
+    Estrategias y herramientas para construir una presencia digital
+    profesional y generar nuevas oportunidades para tu negocio.
   </p>
 
   <div class="cards">
@@ -280,47 +448,124 @@
     <div class="card">
       <h3>Redes Sociales</h3>
       <p>
-        Estrategia, contenidos y organización de redes sociales
-        para construir una presencia profesional.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Publicidad Digital</h3>
-      <p>
-        Planificación y gestión de campañas publicitarias
-        orientadas a alcanzar potenciales clientes.
+        Planificación, contenido y organización de Instagram y Facebook.
       </p>
     </div>
 
     <div class="card">
       <h3>Estrategia Digital</h3>
       <p>
-        Análisis del negocio, público, competencia y oportunidades
-        para desarrollar una estrategia de crecimiento.
+        Análisis del negocio, público, competencia, propuesta comercial
+        y oportunidades de crecimiento.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Contenido</h3>
+      <p>
+        Diseño de publicaciones, copies, Reels y planificación
+        de contenido para redes sociales.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Publicidad Digital</h3>
+      <p>
+        Planificación y gestión de campañas publicitarias para
+        alcanzar potenciales clientes.
       </p>
     </div>
 
   </div>
 </section>
 
+<section id="pack" class="pack-section">
+
+  <h2>Una solución para empezar</h2>
+
+  <p class="subtitle">
+    Un servicio pensado especialmente para emprendimientos que quieren
+    profesionalizar su presencia digital.
+  </p>
+
+  <div class="pack">
+
+    <div class="pack-label">Precio lanzamiento</div>
+
+    <h3>Pack Presencia Digital</h3>
+
+    <p>
+      Una base profesional para ordenar tu comunicación y comenzar
+      a trabajar tus redes con una estrategia clara.
+    </p>
+
+    <div class="price">$120.000 ARS</div>
+
+    <p><strong>Pago único</strong></p>
+
+    <ul>
+      <li>Diagnóstico de presencia digital.</li>
+      <li>Revisión y optimización de Instagram y Facebook.</li>
+      <li>Definición de público y propuesta comercial.</li>
+      <li>Estrategia inicial de Marketing Digital.</li>
+      <li>Calendario de contenidos de 30 días.</li>
+      <li>Publicaciones diseñadas con copy.</li>
+      <li>2 Reels.</li>
+      <li>Revisión/configuración básica de WhatsApp Business, Facebook, Instagram y Meta.</li>
+    </ul>
+
+    <a class="button"
+       href="https://wa.me/541136755794?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Pack%20Presencia%20Digital"
+       target="_blank">
+       Consultar por WhatsApp
+    </a>
+
+    <p class="note">
+      La inversión publicitaria y la gestión de campañas pagas
+      no están incluidas en este pack y se cotizan por separado.
+    </p>
+
+  </div>
+</section>
+
+<section id="ebooks" class="ebooks">
+
+  <h2>Ebooks y productos digitales</h2>
+
+  <p class="subtitle">
+    Recursos prácticos creados para ayudarte a organizar,
+    promocionar y hacer crecer tu negocio.
+  </p>
+
+  <div class="ebook-box">
+    <h3>Próximamente</h3>
+    <p>
+      Estamos preparando nuevos ebooks, guías y recursos digitales.
+      Muy pronto vas a poder encontrarlos acá.
+    </p>
+  </div>
+
+</section>
+
 <section id="contacto" class="contact">
-  <h2>¿Querés hacer crecer tu negocio?</h2>
+
+  <h2>¿Hablamos de tu negocio?</h2>
 
   <p>
-    Conocé nuestros programas o consultanos por nuestros
-    servicios de Marketing Digital.
+    Consultanos por servicios de Marketing Digital, nuestros programas
+    o próximos productos digitales.
   </p>
 
   <a class="button"
-   href="https://wa.me/541136755794?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Marketing%20Manager%20PRO"
-   target="_blank">
-    Contactar por WhatsApp
-</a>
+     href="https://wa.me/541136755794?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Marketing%20Manager%20PRO"
+     target="_blank">
+     Contactar por WhatsApp
+  </a>
+
 </section>
 
 <footer>
-  © 2026 Marketing Manager PRO · Software y Marketing Digital
+  © 2026 Marketing Manager PRO · Software · Productos Digitales · Marketing
 </footer>
 
 </body>

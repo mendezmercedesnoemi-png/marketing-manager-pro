@@ -137,6 +137,7 @@
       border-radius: 8px;
       font-weight: bold;
       transition: 0.2s;
+      border: none;
     }
 
     .button:hover {
@@ -149,8 +150,17 @@
       border: 2px solid white;
     }
 
+    .button-green {
+      background: #17864b;
+    }
+
+    .button-green:hover {
+      background: #116b3b;
+    }
+
     section {
       padding: 75px 8%;
+      scroll-margin-top: 85px;
     }
 
     section h2 {
@@ -180,6 +190,9 @@
       padding: 30px;
       border-radius: 15px;
       box-shadow: 0 7px 25px rgba(21, 49, 83, 0.09);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     }
 
     .card h3 {
@@ -190,6 +203,10 @@
     .card p {
       color: #617087;
       margin-bottom: 15px;
+    }
+
+    .card .button {
+      margin-top: auto;
     }
 
     .status {
@@ -204,6 +221,11 @@
     }
 
     .status-free {
+      background: #e8f8ef;
+      color: #17864b;
+    }
+
+    .status-sale {
       background: #e8f8ef;
       color: #17864b;
     }
@@ -296,6 +318,27 @@
       font-size: 18px;
     }
 
+    .social-links {
+      margin-top: 15px;
+    }
+
+    .social-links a {
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 8px 8px;
+      padding: 10px 18px;
+      border: 1px solid rgba(255,255,255,0.55);
+      border-radius: 8px;
+      transition: 0.2s;
+    }
+
+    .social-links a:hover {
+      background: white;
+      color: #07568f;
+    }
+
     footer {
       background: #040d1c;
       color: #aebdce;
@@ -365,6 +408,11 @@
         text-align: center;
         margin-right: 0;
       }
+
+      .social-links a {
+        display: block;
+        margin: 10px 0;
+      }
     }
   </style>
 </head>
@@ -384,10 +432,11 @@
     <a href="#programas">Programas</a>
     <a href="#servicios">Servicios</a>
     <a href="#pack">Pack Digital</a>
-    <a href="#ebooks">Productos Digitales</a>
+    <a href="#ebooks">Ebooks</a>
     <a href="#contacto">Contacto</a>
   </nav>
 </header>
+
 
 <section class="hero">
   <div class="hero-wrap">
@@ -404,12 +453,12 @@
         organizarse, profesionalizar su presencia y hacer crecer su negocio.
       </p>
 
-      <a class="button" href="#servicios">
-        Conocer servicios
+      <a class="button" href="#programas">
+        Ver programas
       </a>
 
-      <a class="button button-outline" href="#programas">
-        Ver programas
+      <a class="button button-outline" href="#servicios">
+        Conocer servicios
       </a>
     </div>
 
@@ -419,6 +468,7 @@
 
   </div>
 </section>
+
 
 <section id="programas">
 
@@ -432,34 +482,56 @@
   <div class="cards">
 
     <div class="card">
-      <span class="status">EN PREPARACIÓN</span>
+      <span class="status">NUEVA VERSIÓN EN PREPARACIÓN</span>
 
       <h3>Marketing Manager PRO</h3>
 
       <p>
-        Una solución para organizar clientes, estrategias, contenidos,
-        campañas, objetivos y reportes de Marketing Digital.
+        Software de escritorio para organizar clientes, estrategias,
+        objetivos, KPIs, campañas, contenidos, analítica y reportes
+        de Marketing Digital.
       </p>
 
       <p>
-        Estamos preparando su próxima versión.
+        Estamos preparando una nueva versión mejorada.
+        Próximamente estará disponible desde esta página.
       </p>
+
+      <a
+        class="button"
+        href="https://wa.me/541136755794?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Marketing%20Manager%20PRO"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Quiero información
+      </a>
     </div>
 
+
     <div class="card">
-      <span class="status">PRÓXIMAMENTE</span>
+      <span class="status status-sale">DISPONIBLE</span>
 
       <h3>Mi Dinero</h3>
 
       <p>
-        Herramienta práctica para organizar y controlar las finanzas
-        de forma sencilla.
+        Una herramienta práctica para organizar tus finanzas y llevar
+        un mejor control de tu dinero de manera sencilla.
       </p>
 
       <p>
-        Próximamente disponible.
+        Compralo de forma online y accedé a través de Hotmart.
       </p>
+
+      <a
+        class="button button-green"
+        href="https://pay.hotmart.com/H107647481M?off=libah46e"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Comprar Mi Dinero
+      </a>
     </div>
+
 
     <div class="card">
       <span class="status status-free">GRATIS · DISPONIBLE</span>
@@ -482,11 +554,11 @@
       >
         Descargar gratis
       </a>
-
     </div>
 
   </div>
 </section>
+
 
 <section id="servicios" class="services">
 
@@ -508,6 +580,7 @@
       </p>
     </div>
 
+
     <div class="card">
       <h3>Estrategia Digital</h3>
 
@@ -517,6 +590,7 @@
       </p>
     </div>
 
+
     <div class="card">
       <h3>Contenido</h3>
 
@@ -525,6 +599,7 @@
         de contenido para redes sociales.
       </p>
     </div>
+
 
     <div class="card">
       <h3>Publicidad Digital</h3>
@@ -538,6 +613,7 @@
   </div>
 </section>
 
+
 <section id="pack" class="pack-section">
 
   <h2>Una solución para empezar</h2>
@@ -550,10 +626,10 @@
   <div class="pack">
 
     <div class="pack-label">
-      Precio lanzamiento
+      Precio de lanzamiento
     </div>
 
-    <h3>Pack Presencia Digital</h3>
+    <h3>Pack Presencia Digital para Emprendedores</h3>
 
     <p>
       Una base profesional para ordenar tu comunicación y comenzar
@@ -599,6 +675,7 @@
   </div>
 </section>
 
+
 <section id="ebooks" class="ebooks">
 
   <h2>Ebooks y productos digitales</h2>
@@ -610,15 +687,17 @@
 
   <div class="ebook-box">
 
-    <h3>Próximamente</h3>
+    <h3>Próximamente nuevos recursos</h3>
 
     <p>
-      Estamos preparando ebooks, guías, plantillas y nuevos
-      recursos digitales. Muy pronto vas a poder encontrarlos acá.
+      Estamos preparando ebooks, guías, plantillas y otros productos
+      digitales. Esta sección ya está preparada para incorporarlos
+      a medida que estén disponibles.
     </p>
 
   </div>
 </section>
+
 
 <section id="contacto" class="contact">
 
@@ -638,7 +717,28 @@
     Contactar por WhatsApp
   </a>
 
+  <div class="social-links">
+
+    <a
+      href="https://www.instagram.com/mmarketingmerce/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Instagram
+    </a>
+
+    <a
+      href="https://www.facebook.com/profile.php?id=61593796073956"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Facebook
+    </a>
+
+  </div>
+
 </section>
+
 
 <footer>
   © 2026 Marketing Manager PRO · Software · Productos Digitales · Marketing Digital

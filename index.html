@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Marketing Manager PRO | Software y Marketing Digital</title>
+  <title>Marketing Manager PRO | Emprendimiento, Marketing y Tecnología</title>
 
   <meta
     name="description"
-    content="Software, productos digitales y servicios de Marketing Digital para emprendedores, comercios y empresas."
+    content="Recursos, ebooks, herramientas y servicios para crear, organizar y hacer crecer tu negocio con Marketing Digital, Inteligencia Artificial y tecnología."
   >
 
   <style>
@@ -30,16 +30,16 @@
     }
 
     header {
-      background: rgba(7, 24, 48, 0.97);
+      background: rgba(7, 24, 48, 0.98);
       color: white;
-      padding: 12px 7%;
+      padding: 12px 6%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 3px 15px rgba(0,0,0,.15);
     }
 
     .brand {
@@ -49,8 +49,8 @@
     }
 
     .brand img {
-      width: 58px;
-      height: 58px;
+      width: 55px;
+      height: 55px;
       border-radius: 50%;
       object-fit: cover;
       background: white;
@@ -65,11 +65,17 @@
       color: #20bff3;
     }
 
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
     nav a {
       color: white;
       text-decoration: none;
-      margin-left: 20px;
-      font-size: 15px;
+      margin-left: 18px;
+      font-size: 14px;
     }
 
     nav a:hover {
@@ -77,31 +83,28 @@
     }
 
     .hero {
-      min-height: 570px;
-      padding: 70px 8%;
-      background: linear-gradient(
-        135deg,
-        rgba(6, 24, 49, 0.97),
-        rgba(7, 87, 145, 0.94)
-      );
+      min-height: 590px;
+      padding: 75px 8%;
+      background:
+        linear-gradient(135deg, rgba(6,24,49,.98), rgba(7,87,145,.94));
       color: white;
       display: flex;
       align-items: center;
     }
 
     .hero-wrap {
-      max-width: 1150px;
+      max-width: 1180px;
       width: 100%;
       margin: auto;
       display: grid;
-      grid-template-columns: 1.4fr 0.8fr;
+      grid-template-columns: 1.35fr .75fr;
       align-items: center;
       gap: 60px;
     }
 
     .hero h1 {
-      font-size: 50px;
-      line-height: 1.12;
+      font-size: 52px;
+      line-height: 1.1;
       margin-bottom: 20px;
     }
 
@@ -113,7 +116,7 @@
       font-size: 20px;
       color: #dceeff;
       max-width: 720px;
-      margin-bottom: 30px;
+      margin-bottom: 28px;
     }
 
     .hero-logo {
@@ -124,20 +127,21 @@
       width: 100%;
       max-width: 330px;
       border-radius: 50%;
-      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 15px 45px rgba(0,0,0,.3);
     }
 
     .button {
       display: inline-block;
-      padding: 13px 24px;
+      padding: 13px 23px;
       margin: 6px 7px 6px 0;
       background: #078ee5;
       color: white;
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
-      transition: 0.2s;
+      transition: .2s;
       border: none;
+      cursor: pointer;
     }
 
     .button:hover {
@@ -158,51 +162,68 @@
       background: #116b3b;
     }
 
+    .button-purple {
+      background: #7254d8;
+    }
+
+    .button-purple:hover {
+      background: #5c42b9;
+    }
+
     section {
       padding: 75px 8%;
-      scroll-margin-top: 85px;
+      scroll-margin-top: 90px;
     }
 
     section h2 {
       text-align: center;
-      font-size: 35px;
+      font-size: 36px;
       margin-bottom: 10px;
     }
 
     .subtitle {
       text-align: center;
       color: #66758b;
-      max-width: 760px;
+      max-width: 800px;
       margin: 0 auto 42px;
       font-size: 17px;
     }
 
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(255px,1fr));
       gap: 25px;
-      max-width: 1150px;
+      max-width: 1180px;
       margin: auto;
     }
 
     .card {
       background: white;
-      padding: 30px;
+      padding: 28px;
       border-radius: 15px;
-      box-shadow: 0 7px 25px rgba(21, 49, 83, 0.09);
+      box-shadow: 0 7px 25px rgba(21,49,83,.09);
       display: flex;
       flex-direction: column;
       align-items: flex-start;
     }
 
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: contain;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      background: #f7f9fc;
+    }
+
     .card h3 {
-      font-size: 22px;
-      margin-bottom: 12px;
+      font-size: 21px;
+      margin-bottom: 10px;
     }
 
     .card p {
       color: #617087;
-      margin-bottom: 15px;
+      margin-bottom: 14px;
     }
 
     .card .button {
@@ -215,9 +236,9 @@
       color: #0878be;
       padding: 5px 11px;
       border-radius: 20px;
-      font-size: 13px;
+      font-size: 12px;
       font-weight: bold;
-      margin-bottom: 15px;
+      margin-bottom: 14px;
     }
 
     .status-free {
@@ -230,27 +251,140 @@
       color: #17864b;
     }
 
-    .services {
-      background: #edf5fc;
+    .price {
+      font-size: 29px;
+      color: #078ee5;
+      font-weight: bold;
+      margin: 7px 0 15px;
     }
 
-    .pack-section {
+    .free-section {
+      background: linear-gradient(135deg,#edf8ff,#f4f0ff);
+    }
+
+    .featured {
+      max-width: 1050px;
+      margin: auto;
+      background: white;
+      border-radius: 20px;
+      padding: 38px;
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 40px;
+      align-items: center;
+      box-shadow: 0 12px 40px rgba(21,49,83,.12);
+    }
+
+    .featured img {
+      width: 100%;
+      max-height: 430px;
+      object-fit: contain;
+      border-radius: 14px;
+    }
+
+    .featured h3 {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .featured p {
+      color: #617087;
+      margin-bottom: 15px;
+    }
+
+    .ebooks {
+      background: white;
+    }
+
+    .pack-ebooks {
       background: #071830;
       color: white;
     }
 
-    .pack-section .subtitle {
+    .pack-ebooks .subtitle {
       color: #c9dced;
     }
 
-    .pack {
+    .pack-product {
+      max-width: 1050px;
+      margin: auto;
+      background: white;
+      color: #10213a;
+      border-radius: 20px;
+      padding: 38px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      box-shadow: 0 15px 45px rgba(0,0,0,.25);
+    }
+
+    .pack-product img {
+      width: 100%;
+      max-height: 440px;
+      object-fit: contain;
+      border-radius: 12px;
+    }
+
+    .pack-product h3 {
+      font-size: 31px;
+      margin-bottom: 10px;
+    }
+
+    .old-price {
+      color: #718096;
+      text-decoration: line-through;
+      margin-bottom: 0;
+    }
+
+    .saving {
+      color: #17864b;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .pack-product ul {
+      margin: 15px 0 22px 22px;
+    }
+
+    .pack-product li {
+      margin-bottom: 7px;
+    }
+
+    .programs {
+      background: #f5f8fc;
+    }
+
+    .services {
+      background: #edf5fc;
+    }
+
+    .service-card {
+      min-height: 190px;
+    }
+
+    .service-icon {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .service-pack-section {
+      background: #071830;
+      color: white;
+    }
+
+    .service-pack-section .subtitle {
+      color: #c9dced;
+    }
+
+    .service-pack {
       max-width: 900px;
       margin: auto;
       background: white;
       color: #10213a;
       border-radius: 18px;
       padding: 40px;
-      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.22);
+      box-shadow: 0 15px 45px rgba(0,0,0,.22);
     }
 
     .pack-label {
@@ -260,23 +394,16 @@
       text-transform: uppercase;
     }
 
-    .pack h3 {
+    .service-pack h3 {
       font-size: 31px;
       margin: 5px 0 8px;
     }
 
-    .price {
-      font-size: 32px;
-      color: #078ee5;
-      font-weight: bold;
-      margin: 15px 0 20px;
-    }
-
-    .pack ul {
+    .service-pack ul {
       margin: 18px 0 25px 22px;
     }
 
-    .pack li {
+    .service-pack li {
       margin-bottom: 8px;
     }
 
@@ -286,34 +413,15 @@
       margin-top: 10px;
     }
 
-    .ebooks {
-      background: white;
-    }
-
-    .ebook-box {
-      max-width: 800px;
-      margin: auto;
-      text-align: center;
-      padding: 40px;
-      background: #f3f8fd;
-      border: 2px dashed #a7cce7;
-      border-radius: 15px;
-    }
-
-    .ebook-box h3 {
-      font-size: 25px;
-      margin-bottom: 10px;
-    }
-
     .contact {
-      background: linear-gradient(135deg, #07568f, #071830);
+      background: linear-gradient(135deg,#07568f,#071830);
       color: white;
       text-align: center;
     }
 
     .contact p {
       color: #d8ebfa;
-      max-width: 650px;
+      max-width: 680px;
       margin: 15px auto 25px;
       font-size: 18px;
     }
@@ -327,11 +435,11 @@
       color: white;
       text-decoration: none;
       font-weight: bold;
-      margin: 8px 8px;
+      margin: 8px;
       padding: 10px 18px;
-      border: 1px solid rgba(255,255,255,0.55);
+      border: 1px solid rgba(255,255,255,.55);
       border-radius: 8px;
-      transition: 0.2s;
+      transition: .2s;
     }
 
     .social-links a:hover {
@@ -347,7 +455,7 @@
       font-size: 14px;
     }
 
-    @media (max-width: 850px) {
+    @media (max-width: 900px) {
       header {
         align-items: flex-start;
         flex-direction: column;
@@ -355,21 +463,25 @@
 
       nav {
         margin-top: 10px;
+        justify-content: flex-start;
       }
 
       nav a {
-        margin: 0 12px 0 0;
-        display: inline-block;
-        padding: 4px 0;
+        margin: 0 12px 5px 0;
+      }
+
+      .hero-wrap,
+      .featured,
+      .pack-product {
+        grid-template-columns: 1fr;
       }
 
       .hero-wrap {
-        grid-template-columns: 1fr;
         text-align: center;
       }
 
       .hero h1 {
-        font-size: 39px;
+        font-size: 40px;
       }
 
       .hero p {
@@ -380,9 +492,18 @@
       .hero-logo img {
         max-width: 230px;
       }
+
+      .featured,
+      .pack-product {
+        text-align: center;
+      }
+
+      .pack-product ul {
+        text-align: left;
+      }
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 520px) {
       section {
         padding: 55px 6%;
       }
@@ -395,12 +516,18 @@
         font-size: 34px;
       }
 
+      section h2 {
+        font-size: 29px;
+      }
+
       .brand-text {
         font-size: 17px;
       }
 
-      .pack {
-        padding: 27px;
+      .featured,
+      .pack-product,
+      .service-pack {
+        padding: 25px;
       }
 
       .button {
@@ -413,6 +540,11 @@
         display: block;
         margin: 10px 0;
       }
+
+      .card img {
+        height: auto;
+        max-height: 300px;
+      }
     }
   </style>
 </head>
@@ -422,17 +554,17 @@
 <header>
   <div class="brand">
     <img src="marketing_manager.png" alt="Logo Marketing Manager PRO">
-
     <div class="brand-text">
       Marketing Manager <span>PRO</span>
     </div>
   </div>
 
   <nav>
-    <a href="#programas">Programas</a>
-    <a href="#servicios">Servicios</a>
-    <a href="#pack">Pack Digital</a>
+    <a href="#gratis">Empezá gratis</a>
     <a href="#ebooks">Ebooks</a>
+    <a href="#pack-ebooks">Pack</a>
+    <a href="#programas">Herramientas</a>
+    <a href="#servicios">Servicios</a>
     <a href="#contacto">Contacto</a>
   </nav>
 </header>
@@ -443,22 +575,22 @@
 
     <div>
       <h1>
-        Tu estrategia y tus herramientas,
-        <span>en un solo lugar.</span>
+        Creá, organizá y hacé crecer
+        <span>tu propio negocio.</span>
       </h1>
 
       <p>
-        Software, productos digitales y servicios de Marketing Digital
-        creados para emprendedores, comercios y empresas que quieren
-        organizarse, profesionalizar su presencia y hacer crecer su negocio.
+        Recursos, tecnología y Marketing Digital para transformar ideas
+        en proyectos reales y ayudarte a construir un negocio cada vez
+        más organizado y profesional.
       </p>
 
-      <a class="button" href="#programas">
-        Ver programas
+      <a class="button" href="#gratis">
+        Empezar gratis
       </a>
 
-      <a class="button button-outline" href="#servicios">
-        Conocer servicios
+      <a class="button button-outline" href="#ebooks">
+        Ver ebooks
       </a>
     </div>
 
@@ -470,13 +602,288 @@
 </section>
 
 
-<section id="programas">
+<section id="gratis" class="free-section">
 
-  <h2>Programas</h2>
+  <h2>Empezá tu negocio gratis</h2>
 
   <p class="subtitle">
-    Herramientas desarrolladas para simplificar la gestión de negocios,
-    marketing y finanzas.
+    Si tenés una idea o querés empezar a emprender, este es tu primer paso.
+  </p>
+
+  <div class="featured">
+
+    <div>
+      <img
+        src="empezatunegocio.png"
+        alt="Empezá tu Negocio - Kit gratuito para emprendedores"
+      >
+    </div>
+
+    <div>
+      <span class="status status-free">100% GRATIS</span>
+
+      <h3>Empezá tu Negocio</h3>
+
+      <p>
+        Un kit práctico creado para ayudarte a transformar una idea
+        en los primeros pasos concretos de tu emprendimiento.
+      </p>
+
+      <p>
+        Incluye ejercicios, plantillas, checklist, planificación,
+        contenidos y recursos de Inteligencia Artificial para comenzar
+        a trabajar sobre tu propio negocio.
+      </p>
+
+      <div class="price">GRATIS</div>
+
+      <a
+        class="button button-green"
+        href="empezatunegocio.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Descargar kit gratuito
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="ebooks" class="ebooks">
+
+  <h2>Colección Creá tu Negocio Digital</h2>
+
+  <p class="subtitle">
+    Una colección práctica para acompañarte desde la idea inicial
+    hasta la creación, promoción y crecimiento de tu negocio.
+    También podés comprar cada ebook por separado.
+  </p>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="1.png" alt="De Idea a Negocio">
+
+      <span class="status status-sale">EBOOK</span>
+
+      <h3>De Idea a Negocio</h3>
+
+      <p>
+        Una guía práctica para transformar una idea en una propuesta
+        de negocio concreta y comenzar a dar tus primeros pasos.
+      </p>
+
+      <div class="price">US$ 7,90</div>
+
+      <a
+        class="button"
+        href="https://pay.hotmart.com/T107726389U"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Comprar ebook
+      </a>
+    </div>
+
+
+    <div class="card">
+      <img src="2.png" alt="Construí tu Marca">
+
+      <span class="status status-sale">EBOOK</span>
+
+      <h3>Construí tu Marca</h3>
+
+      <p>
+        Aprendé a construir una identidad clara, una propuesta de valor
+        y una presencia profesional para tu negocio.
+      </p>
+
+      <div class="price">US$ 7,90</div>
+
+      <a
+        class="button"
+        href="https://pay.hotmart.com/G107730059B"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Comprar ebook
+      </a>
+    </div>
+
+
+    <div class="card">
+      <img src="3.png" alt="Marketing Digital desde Cero">
+
+      <span class="status status-sale">EBOOK</span>
+
+      <h3>Marketing Digital desde Cero</h3>
+
+      <p>
+        Conocé las bases para promocionar tu negocio, crear contenido
+        y comenzar a construir tu presencia digital.
+      </p>
+
+      <div class="price">US$ 7,90</div>
+
+      <a
+        class="button"
+        href="https://pay.hotmart.com/M107730185I"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Comprar ebook
+      </a>
+    </div>
+
+
+    <div class="card">
+      <img src="4.png" alt="IA para Emprendedores">
+
+      <span class="status status-sale">EBOOK</span>
+
+      <h3>IA para Emprendedores</h3>
+
+      <p>
+        Descubrí cómo utilizar Inteligencia Artificial para organizarte,
+        generar ideas, crear contenido y trabajar de manera más eficiente.
+      </p>
+
+      <div class="price">US$ 7,90</div>
+
+      <a
+        class="button"
+        href="https://pay.hotmart.com/I107730261N"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Comprar ebook
+      </a>
+    </div>
+
+
+    <div class="card">
+      <img src="5.png" alt="Creá y Vendé tu Primer Producto Digital">
+
+      <span class="status status-sale">EBOOK</span>
+
+      <h3>Creá y Vendé tu Primer Producto Digital</h3>
+
+      <p>
+        Una guía para convertir tus conocimientos e ideas en un producto
+        digital y preparar su comercialización.
+      </p>
+
+      <div class="price">US$ 7,90</div>
+
+      <a
+        class="button"
+        href="https://pay.hotmart.com/Q107730344K"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Comprar ebook
+      </a>
+    </div>
+
+
+    <div class="card">
+      <img src="6.png" alt="Programación para Emprendedores">
+
+      <span class="status status-sale">EBOOK</span>
+
+      <h3>Programación para Emprendedores</h3>
+
+      <p>
+        Una introducción práctica para entender cómo la programación,
+        la automatización y la tecnología pueden ayudarte en tu negocio.
+      </p>
+
+      <div class="price">US$ 7,90</div>
+
+      <a
+        class="button"
+        href="https://pay.hotmart.com/F107730310B"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Comprar ebook
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="pack-ebooks" class="pack-ebooks">
+
+  <h2>Llevate la colección completa</h2>
+
+  <p class="subtitle">
+    Todo el recorrido de aprendizaje más Mi Dinero en una sola compra.
+  </p>
+
+  <div class="pack-product">
+
+    <div>
+      <img
+        src="pack.png"
+        alt="Pack Creá tu Negocio Digital con Mi Dinero"
+      >
+    </div>
+
+    <div>
+      <span class="status status-sale">PACK COMPLETO</span>
+
+      <h3>Creá tu Negocio Digital</h3>
+
+      <p>
+        Accedé a los seis ebooks de la colección y sumá
+        Mi Dinero para organizar también tus finanzas.
+      </p>
+
+      <ul>
+        <li>De Idea a Negocio.</li>
+        <li>Construí tu Marca.</li>
+        <li>Marketing Digital desde Cero.</li>
+        <li>IA para Emprendedores.</li>
+        <li>Creá y Vendé tu Primer Producto Digital.</li>
+        <li>Programación para Emprendedores.</li>
+        <li><strong>Mi Dinero — Kit de Finanzas Personales.</strong></li>
+      </ul>
+
+      <p class="old-price">
+        Valor por separado: US$ 60,30
+      </p>
+
+      <div class="price">US$ 34,99</div>
+
+      <p class="saving">
+        Ahorrás US$ 25,31
+      </p>
+
+      <a
+        class="button button-green"
+        href="https://pay.hotmart.com/K107730431S"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Comprar pack completo
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="programas" class="programs">
+
+  <h2>Herramientas para organizarte</h2>
+
+  <p class="subtitle">
+    Recursos desarrollados para ayudarte a gestionar mejor
+    tu negocio, tus finanzas y tu Marketing Digital.
   </p>
 
   <div class="cards">
@@ -509,22 +916,23 @@
 
 
     <div class="card">
+      <img src="midinero.png" alt="Mi Dinero">
+
       <span class="status status-sale">DISPONIBLE</span>
 
       <h3>Mi Dinero</h3>
 
       <p>
-        Una herramienta práctica para organizar tus finanzas y llevar
-        un mejor control de tu dinero de manera sencilla.
+        Kit práctico para organizar tus finanzas personales,
+        registrar ingresos y gastos y tener mayor claridad
+        sobre tu dinero.
       </p>
 
-      <p>
-        Compralo de forma online y accedé a través de Hotmart.
-      </p>
+      <div class="price">US$ 12,90</div>
 
       <a
         class="button button-green"
-        href="https://pay.hotmart.com/H107647481M?off=libah46e"
+        href="https://pay.hotmart.com/G107673879J"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -534,25 +942,23 @@
 
 
     <div class="card">
-      <span class="status status-free">GRATIS · DISPONIBLE</span>
+      <span class="status status-free">GRATIS · ANDROID</span>
 
       <h3>Mi Negocio Fácil</h3>
 
       <p>
-        Aplicación para pequeños comercios y emprendimientos que permite
-        gestionar productos, precios, ventas, stock, cobros e historial
-        de operaciones de forma sencilla.
+        Aplicación gratuita para pequeños comercios y emprendimientos.
+        Gestioná productos, precios, ventas, stock, cobros e historial
+        de operaciones de manera sencilla.
       </p>
 
-      <p>
-        Disponible gratuitamente para Android.
-      </p>
+      <div class="price">GRATIS</div>
 
       <a
-        class="button"
+        class="button button-green"
         href="https://github.com/mendezmercedesnoemi-png/mi-negocio-facil/releases/download/v1.0.0/app-release.apk"
       >
-        Descargar gratis
+        Descargar para Android
       </a>
     </div>
 
@@ -565,33 +971,39 @@
   <h2>Servicios de Marketing Digital</h2>
 
   <p class="subtitle">
-    Estrategias y herramientas para construir una presencia digital
-    profesional y generar nuevas oportunidades para tu negocio.
+    Si preferís contar con ayuda profesional, también podemos
+    trabajar juntos en la presencia y estrategia digital de tu negocio.
   </p>
 
   <div class="cards">
 
-    <div class="card">
+    <div class="card service-card">
+      <div class="service-icon">📱</div>
+
       <h3>Redes Sociales</h3>
 
       <p>
-        Planificación, contenido y organización de Instagram y Facebook
-        para construir una presencia digital profesional.
+        Planificación, contenido y organización de Instagram
+        y Facebook para construir una presencia digital profesional.
       </p>
     </div>
 
 
-    <div class="card">
+    <div class="card service-card">
+      <div class="service-icon">📈</div>
+
       <h3>Estrategia Digital</h3>
 
       <p>
-        Análisis del negocio, público, competencia, propuesta comercial
-        y oportunidades de crecimiento.
+        Análisis de negocio, público, competencia, propuesta
+        comercial y oportunidades de crecimiento.
       </p>
     </div>
 
 
-    <div class="card">
+    <div class="card service-card">
+      <div class="service-icon">🎨</div>
+
       <h3>Contenido</h3>
 
       <p>
@@ -601,12 +1013,14 @@
     </div>
 
 
-    <div class="card">
+    <div class="card service-card">
+      <div class="service-icon">📣</div>
+
       <h3>Publicidad Digital</h3>
 
       <p>
-        Planificación y gestión de campañas publicitarias orientadas
-        a alcanzar potenciales clientes.
+        Planificación y gestión de campañas publicitarias
+        orientadas a alcanzar potenciales clientes.
       </p>
     </div>
 
@@ -614,16 +1028,16 @@
 </section>
 
 
-<section id="pack" class="pack-section">
+<section class="service-pack-section">
 
-  <h2>Una solución para empezar</h2>
+  <h2>Pack Presencia Digital</h2>
 
   <p class="subtitle">
-    Un servicio pensado especialmente para emprendimientos que quieren
-    profesionalizar su presencia digital.
+    Para emprendimientos que quieren dar un paso profesional
+    en su comunicación y presencia online.
   </p>
 
-  <div class="pack">
+  <div class="service-pack">
 
     <div class="pack-label">
       Precio de lanzamiento
@@ -632,8 +1046,8 @@
     <h3>Pack Presencia Digital para Emprendedores</h3>
 
     <p>
-      Una base profesional para ordenar tu comunicación y comenzar
-      a trabajar tus redes con una estrategia clara.
+      Una base profesional para ordenar tu comunicación
+      y comenzar a trabajar tus redes con una estrategia clara.
     </p>
 
     <div class="price">
@@ -676,36 +1090,13 @@
 </section>
 
 
-<section id="ebooks" class="ebooks">
-
-  <h2>Ebooks y productos digitales</h2>
-
-  <p class="subtitle">
-    Recursos prácticos creados para ayudarte a organizar,
-    promocionar y hacer crecer tu negocio.
-  </p>
-
-  <div class="ebook-box">
-
-    <h3>Próximamente nuevos recursos</h3>
-
-    <p>
-      Estamos preparando ebooks, guías, plantillas y otros productos
-      digitales. Esta sección ya está preparada para incorporarlos
-      a medida que estén disponibles.
-    </p>
-
-  </div>
-</section>
-
-
 <section id="contacto" class="contact">
 
   <h2>¿Hablamos de tu negocio?</h2>
 
   <p>
-    Consultanos por servicios de Marketing Digital,
-    nuestros programas o próximos productos digitales.
+    Podés consultarnos sobre nuestros productos,
+    herramientas o servicios de Marketing Digital.
   </p>
 
   <a
@@ -741,7 +1132,7 @@
 
 
 <footer>
-  © 2026 Marketing Manager PRO · Software · Productos Digitales · Marketing Digital
+  © 2026 Marketing Manager PRO · Negocios · Marketing Digital · Tecnología
 </footer>
 
 </body>
